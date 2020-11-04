@@ -19,11 +19,11 @@ function getComputerChoice() {
 
 function convertWord(word) {
   switch(word) {
-    case "rock":
+    case "Rock":
       return "Rock";
-    case "paper":
+    case "Paper":
       return "Paper";
-    case "scissors":
+    case "Scissors":
       return "Scissors";
   }
 }
@@ -67,19 +67,19 @@ function draw(user, comp) {
 function game(userChoice) {
   var compChoice = getComputerChoice();
   switch(userChoice + compChoice) {
-    case "rockscissors":
-    case "paperrock":
-    case "scissorspaper":
+    case "RockScissors":
+    case "PaperRock":
+    case "ScissorsPaper":
       win(userChoice, compChoice);
       break;
-    case "rockpaper":
-    case "paperscissors":
-    case "scissorsrock":
+    case "RockPaper":
+    case "PaperScissors":
+    case "ScissorsRock":
       lose(userChoice, compChoice);
       break;
-    case "rockrock":
-    case "paperpaper":
-    case "scissorsscissors":
+    case "RockRock":
+    case "PaperPaper":
+    case "ScissorsScissors":
       draw(userChoice, compChoice);
       break;
   }
@@ -89,15 +89,15 @@ function game(userChoice) {
 
 function main() {
   rock_div.addEventListener("click", function() {
-    game("rock");
+    game("Rock");
   });
 
   paper_div.addEventListener("click", function() {
-    game("paper");
+    game("Paper");
   });
 
   scissors_div.addEventListener("click", function() {
-    game("scissors");
+    game("Scissors");
   });
 }
 
