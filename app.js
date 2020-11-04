@@ -35,8 +35,8 @@ function win(user, comp) {
   var smallUserWord = "user".fontsize(3).sub();
   var smallCompWord = "comp".fontsize(3).sub();
   var userChoice_div = document.getElementById(user);
-  result_p.innerHTML       = convertWord(user) + smallUserWord + " beats " +
-                             comp + smallCompWord + ". You win. 🔥";
+  result_p.innerHTML       = convertWord(user) + smallUserWord + " v/s " +
+                             comp + smallCompWord + ". <br> You win. 🔥";
   userChoice_div.classList.add("green-glow");
   setTimeout(function() {userChoice_div.classList.remove("green-glow");}, 800);
 }
@@ -48,8 +48,8 @@ function lose(user, comp) {
   var smallUserWord = "user".fontsize(3).sub();
   var smallCompWord = "comp".fontsize(3).sub();
   var userChoice_div = document.getElementById(user);
-  result_p.innerHTML       = convertWord(user) + smallUserWord + " loses to " +
-                             comp + smallCompWord + ". You lost. 💩";
+  result_p.innerHTML       = convertWord(user) + smallUserWord + " v/s " +
+                             comp + smallCompWord + ". <br> You lose. 💩";
   userChoice_div.classList.add("red-glow");
   setTimeout(function() {userChoice_div.classList.remove("red-glow");}, 800);
 }
