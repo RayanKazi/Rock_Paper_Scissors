@@ -6,9 +6,9 @@ var userScore_span = document.querySelector("#user-score");
 var compScore_span = document.querySelector("#comp-score");
 var scoreBoard_div = document.querySelector(".score-board");
 var result_p       = document.querySelector(".result > p");
-var rock_div       = document.querySelector("#rock");
-var paper_div      = document.querySelector("#paper");
-var scissors_div   = document.querySelector("#scissors");
+var rock_div       = document.querySelector("#Rock");
+var paper_div      = document.querySelector("#Paper");
+var scissors_div   = document.querySelector("#Scissors");
 
 
 function getComputerChoice() {
