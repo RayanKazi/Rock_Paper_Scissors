@@ -12,7 +12,7 @@ var scissors_div   = document.querySelector("#scissors");
 
 
 function getComputerChoice() {
-  var choices = ["rock", "paper", "scissors"];
+  var choices = ["Rock", "Paper", "Scissors"];
   var randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
 }
@@ -36,7 +36,7 @@ function win(user, comp) {
   var smallCompWord = "comp".fontsize(3).sub();
   var userChoice_div = document.getElementById(user);
   result_p.innerHTML       = convertWord(user) + smallUserWord + " v/s " +
-                             comp + smallCompWord + ". <br> You win. 🔥";
+                             comp + smallCompWord + ". <br> You Win! 🔥";
   userChoice_div.classList.add("green-glow");
   setTimeout(function() {userChoice_div.classList.remove("green-glow");}, 800);
 }
@@ -49,7 +49,7 @@ function lose(user, comp) {
   var smallCompWord = "comp".fontsize(3).sub();
   var userChoice_div = document.getElementById(user);
   result_p.innerHTML       = convertWord(user) + smallUserWord + " v/s " +
-                             comp + smallCompWord + ". <br> You lose. 💩";
+                             comp + smallCompWord + ". <br> You Lose! 💩";
   userChoice_div.classList.add("red-glow");
   setTimeout(function() {userChoice_div.classList.remove("red-glow");}, 800);
 }
@@ -58,8 +58,8 @@ function draw(user, comp) {
   var smallUserWord = "user".fontsize(3).sub();
   var smallCompWord = "comp".fontsize(3).sub();
   var userChoice_div = document.getElementById(user);
-  result_p.innerHTML       = convertWord(user) + smallUserWord + " draws with " +
-                             comp + smallCompWord + ".";
+  result_p.innerHTML       = convertWord(user) + smallUserWord + " v/s " +
+                             comp + smallCompWord + ". <br> Draw";
   userChoice_div.classList.add("gray-glow");
   setTimeout(function() {userChoice_div.classList.remove("gray-glow");}, 800);
 }
